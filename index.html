@@ -8,14 +8,20 @@
 	<title>Bootstrap ajax test</title>
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<label for="name">Имя <span>*</span></label>
-				<input id="name" type="text">
-			</div>
-			<div class="col">
-				<textarea id="comment" name="" cols="30" rows="10"></textarea>
+	<form id="form" action=""></form>
+	<div class="wrapper">
+		<div class="container upper">
+			<div class="row">
+				<div class="col">
+					<label class="w-100" for="name">Имя <span>*</span></label>
+					<input form="form" id="name" type="text">
+					<label class="align-items-end w-100" for="email">E-Mail <span>*</span></label>
+					<input form="form" id="email" type="text">
+				</div>
+				<div class="col">
+					<label class="w-100" for="comment">Комментарий <span>*</span></label>
+					<textarea form="form" id="comment" name="" cols="30" rows="10"></textarea>
+				</div>
 			</div>
 		</div>
 	</div>

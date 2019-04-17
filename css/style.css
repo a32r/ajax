@@ -1,0 +1,11 @@
+.wrapper {
+	background: rgb(45, 49, 54);
+}
+
+.upper {
+	color: white;
+}
+
+label > span {
+	color: red;
+}
