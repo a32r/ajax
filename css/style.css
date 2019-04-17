@@ -1,11 +1,3 @@
-.wrapper {
-	background: rgb(45, 49, 54);
-}
+.wrapper{background:#2d3136}.upper{width:600px;color:white}.upper .col:first-of-type{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column}.upper .col:first-of-type .row:last-of-type{margin-top:auto;margin-bottom:7px}label>span{color:red}
 
-.upper {
-	color: white;
-}
-
-label > span {
-	color: red;
-}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+.wrapper {
+	background: rgb(45, 49, 54);
+}
+
+.upper {
+	width: 600px;
+	color: white;
+
+	.col:first-of-type {
+		display: flex;
+		flex-flow: column;
+
+		.row:last-of-type {
+			margin-top: auto;
+			margin-bottom: 7px;
+		}
+	}
+}
+
+label > span {
+	color: red;
+}
