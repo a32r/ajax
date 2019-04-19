@@ -3,8 +3,18 @@
 }
 
 .upper {
-	width: 600px;
+	padding-top: 2em;
+	max-width: 600px;
 	color: white;
+
+	#logo {
+		height: 45px;
+	}
+
+	#mail {
+		height: 130px;
+		margin: 3em 0 1em;
+	}
 
 	.col:first-of-type {
 		display: flex;
@@ -19,4 +29,24 @@
 
 label > span {
 	color: red;
+}
+
+input[type="submit"] {
+	margin: 2em 0 2em auto;
+}
+
+input[type="text"] {
+	padding: .5em;
+	margin-right: auto;
+}
+
+textarea {
+	resize: none;
+}
+
+input[type="text"], textarea {
+	color: white;
+	border: none;
+	border-radius: 4px;
+	// background: rgb(46, 50, 55);
 }
