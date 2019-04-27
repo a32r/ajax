@@ -1,6 +1,24 @@
-.col-4 .block {
-	width: 50%;
-	margin: 0 auto;
-	border: 2px solid black;
-	background: yellow;
+.col-4 {
+
+	.block {
+		width: 90%;
+		height: 200px;
+		margin: 0 auto;
+		border: 2px solid black;
+	}
+
+	&:nth-of-type(odd) {
+
+		.block {
+			background: $oddBoldColor;
+		}
+	}
+
+	&:nth-of-type(even) {
+
+		.block {
+			background: $evenBoldColor;
+
+		}
+	}
 }
