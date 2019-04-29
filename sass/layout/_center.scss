@@ -2,7 +2,7 @@
 	margin-bottom: 3em;
 
 	.row:first-of-type {
-		color: $upperColor;
+		color: $backColor;
 		font-size: 2em;
 		font-weight: bold;
 		margin: 2em auto;
@@ -16,6 +16,7 @@
 		width: 90%;
 		height: 250px;
 		margin: 0 auto 2.5em;
+		overflow: hidden;
 
 		.header, .email {
 			font-size: 1.3em;

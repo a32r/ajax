@@ -1,5 +1,5 @@
 .wrapper {
-	background: $upperColor;
+	background: $backColor;
 }
 
 .upper {
@@ -35,9 +35,8 @@ input[type="submit"] {
 	float: right;
 }
 
-input[type="text"] {
+input[type="text"], textarea {
 	padding: .5em;
-	margin-right: auto;
 }
 
 textarea {
