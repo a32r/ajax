@@ -1,4 +1,7 @@
-<?php require_once("db_connect.php"); ?>
+<?php require_once("php/db_connect.php"); ?>
+<?php require_once("php/functions.php"); ?>
+<!-- <?php debug($_SERVER) ?> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
