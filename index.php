@@ -51,64 +51,9 @@
 	</div>
 	<div class="container center">
 		<div class="row justify-content-center">Выводим комментарии</div>
-		<?php require_once("php/db_get.php"); ?>
-		<!-- <div class="row"> -->
-		<!-- 	<div class="col-4"> -->
-		<!-- 		<div class="comment"> -->
-		<!-- 			<div class="header"> -->
-		<!-- 				Вася -->
-		<!-- 			</div> -->
-		<!-- 			<div class="content"> -->
-		<!-- 				<div class="email">vasya@mail.ru</div> -->
-		<!-- 				<div class="message">Сообщение от Василия Пупкина</div> -->
-		<!-- 			</div> -->
-		<!-- 		</div> -->
-		<!-- 	</div> -->
-		<!-- 	<div class="col-4"> -->
-		<!-- 		<div class="comment"> -->
-		<!-- 			<div class="header"> -->
-		<!-- 				Маруся -->
-		<!-- 			</div> -->
-		<!-- 			<div class="content"> -->
-		<!-- 				<div class="email">marysia@mail.ru</div> -->
-		<!-- 				<div class="message">Всем привет, я Маруся</div> -->
-		<!-- 			</div> -->
-		<!-- 		</div> -->
-		<!-- 	</div> -->
-		<!-- 	<div class="col-4"> -->
-		<!-- 		<div class="comment"> -->
-		<!-- 			<div class="header"> -->
-		<!-- 				Вася -->
-		<!-- 			</div> -->
-		<!-- 			<div class="content"> -->
-		<!-- 				<div class="email">vasya@mail.ru</div> -->
-		<!-- 				<div class="message">Сообщение от Василия Пупкина</div> -->
-		<!-- 			</div> -->
-		<!-- 		</div> -->
-		<!-- 	</div> -->
-		<!-- 	<div class="col-4"> -->
-		<!-- 		<div class="comment"> -->
-		<!-- 			<div class="header"> -->
-		<!-- 				Маруся -->
-		<!-- 			</div> -->
-		<!-- 			<div class="content"> -->
-		<!-- 				<div class="email">marysia@mail.ru</div> -->
-		<!-- 				<div class="message">Всем привет, я Маруся</div> -->
-		<!-- 			</div> -->
-		<!-- 		</div> -->
-		<!-- 	</div> -->
-		<!-- 	<div class="col-4"> -->
-		<!-- 		<div class="comment"> -->
-		<!-- 			<div class="header"> -->
-		<!-- 				Вася -->
-		<!-- 			</div> -->
-		<!-- 			<div class="content"> -->
-		<!-- 				<div class="email">vasya@mail.ru</div> -->
-		<!-- 				<div class="message">Сообщение от Василия Пупкина</div> -->
-		<!-- 			</div> -->
-		<!-- 		</div> -->
-		<!-- 	</div> -->
-		<!-- </div> -->
+		<div class="row">
+			<?php require_once("php/db_get.php"); ?>
+		</div>
 	</div>
 	<footer>
 		<div class="container footer">
