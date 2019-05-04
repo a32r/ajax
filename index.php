@@ -1,5 +1,6 @@
-<?php require_once("php/db_connect.php"); ?>
 <?php require_once("php/functions.php"); ?>
+<?php require_once("php/db_connect.php"); ?>
+<?php require_once("php/db_save.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +12,7 @@
 	<title>Bootstrap ajax test</title>
 </head>
 <body>
-	<form id="form" action=""></form>
+	<form id="form" action="<?=$_SERVER['SCRIPT_NAME']?>" method="POST"></form>
 	<div class="wrapper">
 		<div class="container upper">
 			<div class="row">
@@ -27,24 +28,24 @@
 					<div class="row">
 						<div class="col">
 							<label class="w-100" for="name">Имя <span>*</span></label>
-							<input form="form" id="name" type="text">
+							<input form="form" name="name" id="name" type="text">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col">
 							<label class="w-100" for="email">E-Mail <span>*</span></label>
-							<input form="form" id="email" type="text">
+							<input form="form" name="email" id="email" type="text">
 						</div>
 					</div>
 				</div>
 				<div class="col">
 					<label class="w-100" for="comment">Комментарий <span>*</span></label>
-					<textarea form="form" id="comment" cols="40" rows="7"></textarea>
+					<textarea form="form" name="comment" id="comment" cols="40" rows="7"></textarea>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col">
-					<input class="btn btn-danger btn-lg" type="submit" value="Записать">
+					<input form="form" class="btn btn-danger btn-lg" type="submit" value="Записать">
 				</div>
 			</div>
 		</div>
