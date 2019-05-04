@@ -1,6 +1,7 @@
 <?php require_once("php/functions.php"); ?>
 <?php require_once("php/db_connect.php"); ?>
 <?php require_once("php/db_save.php"); ?>
+<?php require_once("php/db_get.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -53,7 +54,17 @@
 	<div class="container center">
 		<div class="row justify-content-center">Выводим комментарии</div>
 		<div class="row">
-			<?php require_once("php/db_get.php"); ?>
+			<?php foreach($arr as $comment) { ?>
+			<div class="col-4">
+				<div class="comment">
+					<div class="header"><?=$comment['name']?></div>
+					<div class="content">
+						<div class="email"><?=$comment['email']?></div>
+						<div class="message"><?=$comment['comment']?></div>
+					</div>
+				</div>
+			</div>
+			<?php }; ?>
 		</div>
 	</div>
 	<footer>
