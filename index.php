@@ -28,19 +28,19 @@
 					<div class="row">
 						<div class="col">
 							<label class="w-100" for="name">Имя <span>*</span></label>
-							<input form="form" name="name" id="name" type="text">
+							<input form="form" name="name" id="name" type="text" required>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col">
 							<label class="w-100" for="email">E-Mail <span>*</span></label>
-							<input form="form" name="email" id="email" type="text">
+							<input form="form" name="email" id="email" type="email" required>
 						</div>
 					</div>
 				</div>
 				<div class="col">
 					<label class="w-100" for="comment">Комментарий <span>*</span></label>
-					<textarea form="form" name="comment" id="comment" cols="40" rows="7"></textarea>
+					<textarea form="form" name="comment" id="comment" cols="40" rows="7" required></textarea>
 				</div>
 			</div>
 			<div class="row">
