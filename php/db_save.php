@@ -1,6 +1,6 @@
 <?php
 
-if(!empty($_POST)) {
+if(!empty($_POST['name'])) {
 	$name = htmlspecialchars($_POST['name']);
 	$email = $_POST['email'];
 	$comment = htmlspecialchars($_POST['comment']);

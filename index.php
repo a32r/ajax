@@ -2,6 +2,7 @@
 <?php require_once("php/db_connect.php"); ?>
 <?php require_once("php/db_save.php"); ?>
 <?php require_once("php/db_get.php"); ?>
+<?php require_once("php/db_clear.php"); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +15,9 @@
 </head>
 <body>
 	<form id="form" action="<?=$_SERVER['SCRIPT_NAME']?>" method="POST"></form>
+	<form id="form_del" action="<?=$_SERVER['SCRIPT_NAME']?>" method="POST">
+		<input type="hidden" name="clear" value="1">
+	</form>
 	<div class="wrapper">
 		<div class="container upper">
 			<div class="row">
@@ -46,6 +50,7 @@
 			</div>
 			<div class="row">
 				<div class="col">
+					<input form="form_del" class="btn btn-danger btn-lg" type="submit" value="Очистить комментарии">
 					<input form="form" class="btn btn-danger btn-lg" type="submit" value="Записать">
 				</div>
 			</div>
