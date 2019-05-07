@@ -1,5 +1,7 @@
 <?php
-debug($_POST);
+
+require_once('functions.php');
+require_once('db_connect.php');
 
 if(!empty($_POST['name'])) {
 	$name = htmlspecialchars($_POST['name']);

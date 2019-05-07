@@ -10,22 +10,27 @@ $('#comment').blur(function() {
 	comment_js = $(this).val();
 });
 
-if(typeof(name_js) != "undefined")
-	data = {
-		name: name_js,
-		email: email_js,
-		comment: comment_js
-	}
-
-$('form[id=form]').submit(function(e) {
-	e.preventDefault();
-});
+// $('form').submit(function(e) {
+// 	e.preventDefault();
+// });
 
 $('input[value="Записать"]').click(function() {
-	if(typeof(data) != "undefined")
-		$.ajax({
-			url: 'php/db_save.php',
-			method: 'post',
-			data: data
-		});
+	$.ajax({
+		url: 'php/db_save.php',
+		method: 'post',
+		data: {
+			name: name_js,
+			email: email_js,
+			comment: comment_js
+		}
+	});
+	$('#name, #email, #comment').val('');
+});
+
+$('input[value="Очистить комментарии"]').click(function() {
+	$.ajax({
+		url: 'php/db_clear.php',
+		method: 'post',
+		data: { clear: 1 }
+	});
 });
