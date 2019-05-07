@@ -1,4 +1,5 @@
 <?php
+debug($_POST);
 
 if(!empty($_POST['name'])) {
 	$name = htmlspecialchars($_POST['name']);

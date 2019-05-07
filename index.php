@@ -1,6 +1,6 @@
 <?php require_once("php/functions.php"); ?>
 <?php require_once("php/db_connect.php"); ?>
-<?php require_once("php/db_save.php"); ?>
+<!-- <?php require_once("php/db_save.php"); ?> -->
 <?php require_once("php/db_get.php"); ?>
 <?php require_once("php/db_clear.php"); ?>
 
@@ -83,5 +83,6 @@
 	</footer>
 	<script src="js/jquery-3.4.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/ajax.js"></script>
 </body>
 </html>
