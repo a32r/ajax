@@ -8,8 +8,8 @@
 	<title>Bootstrap ajax test</title>
 </head>
 <body>
-	<form id="form">
-	<form id="form_del">
+	<form id="form" method="post" action="">
+	<form id="form_del" method="post" action="">
 		<input type="hidden" name="clear" value="1">
 	</form>
 	<div class="wrapper">
@@ -52,16 +52,8 @@
 	</div>
 	<div class="container center">
 		<div class="row justify-content-center">Выводим комментарии</div>
-		<div class="row">
-			<div class="col-4">
-				<div class="comment">
-					<div class="header">Имя</div>
-					<div class="content">
-						<div class="email">email</div>
-						<div class="message">Сообщение</div>
-					</div>
-				</div>
-			</div>
+		<div class="row comments">
+			<?php require_once('php/db_get.php'); ?>
 		</div>
 	</div>
 	<footer>

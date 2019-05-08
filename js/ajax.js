@@ -22,8 +22,14 @@ $('input[value="Записать"]').click(function() {
 			name: name_js,
 			email: email_js,
 			comment: comment_js
+		},
+		success: function() {
+			$('.comments').load('php/db_get.php');
 		}
 	});
+	name_js = undefined;
+	email_js = undefined;
+	comment_js = undefined;
 	$('#name, #email, #comment').val('');
 });
 
@@ -31,6 +37,10 @@ $('input[value="Очистить комментарии"]').click(function() {
 	$.ajax({
 		url: 'php/db_clear.php',
 		method: 'post',
-		data: { clear: 1 }
+		data: { clear: 1 },
+		success: function() {
+			$('.comments').load('php/db_get.php');
+		}
 	});
+	clear = undefined;
 });
